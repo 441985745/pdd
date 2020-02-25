@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="top">
+  <image src="/assets/imgs/index-top.png"/>
+</view>
+<view class="link">
+  <navigator  url="/pages/log/log">
+    <image src="/assets/imgs/外套.png"/>
+  </navigator>
+  <navigator  url="/pages/log/log">
+    <image src="/assets/imgs/牛仔裤.png"/>
+  </navigator>
+</view>
+<view class="jiange"></view>
+<view class="grid">
+  <navigator class="item" wx:for="{{categories}}" wx:key="id">
+    <image src="/assets/imgs/鞋.png"/>
+    <view class="content">
+      <view style="margin-top:10rpx;margin-bottom:30rpx">{{item.title}}</view>
+      <view style="font-size:25rpx">地址:{{item.location}}</view>
+      <view style="font-size:25rpx">营业时间:{{item.openTime}}</view>
+    </view>
+    
+  </navigator>
+</view>
